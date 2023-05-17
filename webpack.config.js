@@ -13,6 +13,8 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    filename:"index.[contenthash].js"
+
   },
   devServer: {
     open: true,
@@ -24,7 +26,11 @@ const config = {
       template: "src/assets/index.html",
     }),
 
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename:'[name].[contenthash].css',
+      chunkFilename:'[id].[contenthash].css',
+      ignoreOrder:false,
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
