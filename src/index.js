@@ -3,13 +3,13 @@ import png from './assets/1.png'
 console.log("Hello World!");
 
 console.log(x)
-console.log('hi2')
 
-const div= document.getElementById('app')
 
-div.innerHTML=`
-    <img src="${png}">
-`
+// const div= document.getElementById('app')
+//
+// div.innerHTML=`
+//     <img src="${png}">
+// `
 
 const button = document.createElement('button')
 button.innerText='懒加载'
