@@ -20,7 +20,8 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      title:'Parker app',
+      template: "src/assets/index.html",
     }),
 
     new MiniCssExtractPlugin(),
