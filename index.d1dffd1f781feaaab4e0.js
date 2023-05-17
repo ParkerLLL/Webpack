@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_webpack_project=self.webpackChunkmy_webpack_project||[]).push([[34],{34:(e,c,a)=>{function l(){console.log("I am lazy loading")}a.r(c),a.d(c,{default:()=>l})}}]);
